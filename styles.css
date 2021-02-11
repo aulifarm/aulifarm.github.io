@@ -1,0 +1,50 @@
+body {
+    background-color: #333;
+}
+
+
+/* Custom cover */
+
+div.cover-text-center {
+    height: 100vh;
+}
+
+.cover-heading {
+    text-transform: uppercase;
+    color: lightsalmon;
+}
+
+.btn.btn-outline-dark {
+    color: white;
+    border: white solid 1px;
+    text-transform: capitalize;
+}
+
+.lead {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+/* Custom projects */
+
+section.jumbotron.text-center {
+    height: 100vh;
+    background-color:rgb(17, 17, 17);
+    box-shadow: 5px 10px 20px  rgb(39, 39, 39) inset;
+    color: lightsalmon;
+}
+
+div.album.py-5 {
+    background-color: rgb(17, 17, 17);
+}
+
+div.card-body {
+    background-color:#333333;
+    color: white;
+    text-align: left;
+}
+
+p.lead.text {
+    color: white;
+}
+
