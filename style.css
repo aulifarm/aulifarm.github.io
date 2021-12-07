@@ -1,0 +1,433 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Heebo", sans-serif;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #EEEEEE;
+    background: #FFD369;
+  }
+  
+  ::selection {
+    color: #EEEEEE;
+    background: #FFD369
+  }
+
+main {
+    font-family: "Heebo", sans-serif;
+}
+
+/*Intro:*/
+
+.intro {
+    background: #212121;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text {
+    color: #FFD369;
+    font-family: "Heebo", sans-serif;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+.text3{
+    color: #EEEEEE;
+}
+
+.hide {
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+/*Landing page:*/
+
+.landing {
+    min-height: 100vh;
+    background: #212121;
+    background-size: cover;
+    padding: 0rem 5rem;
+    -moz-box-shadow:    inset 0 0 50px #161515;
+    -webkit-box-shadow: inset 0 0 50px #161515;
+    box-shadow:         inset 0 0 50px #161515;
+}
+
+.big-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -30%);
+    font-size: 5rem;
+    font-family: "Lobster", cursive;
+    color: #FFD369;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+.scroll {
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 90px;
+    text-align: center;
+    color: #EEEEEE;
+}
+
+.scroll a {
+    text-decoration: none;
+    color: #EEEEEE;
+    text-shadow: 2px 2px 5px black;
+}
+
+/*Parallax:*/
+
+.me-parallax {
+    background: url(./images/me.jpeg);
+    filter: grayscale(100%);
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: relative;
+}
+
+
+/* Text divs (about, projects, contact): */
+
+.textdiv-about, .textdiv-projects {
+    min-height: 500px;
+    background: #212121;
+    background-size: cover;
+    padding: 5rem;
+    color: #EEEEEE;
+    text-shadow: 2px 2px 5px black;
+    -moz-box-shadow:    inset 0 0 50px #161515;
+    -webkit-box-shadow: inset 0 0 50px #161515;
+    box-shadow:         inset 0 0 50px #161515;
+}
+
+.textdiv-contact {
+    min-height: 200px;
+    background: #212121;
+    background-size: cover;
+    padding: 5rem;
+    color: #EEEEEE;
+    text-shadow: 2px 2px 5px black;
+    -moz-box-shadow:    inset 0 0 50px #161515;
+    -webkit-box-shadow: inset 0 0 50px #161515;
+    box-shadow:         inset 0 0 50px #161515;
+}
+
+.textdiv-timeline {
+    min-height: 500px;
+    background: #212121;
+    text-shadow: 2px 2px 5px black;
+    background-size: cover;
+    padding: 5rem;
+    color: #EEEEEE;
+    -moz-box-shadow:    inset 0 0 30px #000000;
+    -webkit-box-shadow: inset 0 0 30px #000000;
+    box-shadow:         inset 0 0 30px #000000;
+
+}
+
+#about h2, .projects h2, #contact h2, .timelineheader {
+    padding-bottom: 2rem;
+    color: #FFD369;
+    font-family: "Lobster", cursive;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+}
+
+/*About:*/
+
+#about {
+    text-align:center;  
+}
+
+#about p {
+    padding: 0.5rem;
+}
+
+#about p a:hover {
+    color: #FFD369;
+    font-weight: bold;
+}
+
+/* timeline */
+
+#timeline {
+	width: 500px;
+	height: 250px;
+	overflow: hidden;
+	margin: 40px auto;
+	position: relative;
+	background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/dot.gif') 3px top repeat-y;
+}
+
+#dates {
+	width: 100px;
+	height: 600px;
+	overflow: hidden;
+	float: left;
+}
+
+#dates li {
+	list-style: none;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 24px;
+	padding-left: 10px;
+	background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/biggerdot.png') left center no-repeat;
+}
+	
+#dates a {
+	color: #EEEEEE;
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+    text-shadow: 2px 2px 5px black;
+    line-height: 38px;
+	padding-bottom: 10px;
+}
+
+#dates a:hover {
+    color: #FFD369;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#issues {
+	width: 400px;
+	height: 600px;
+	overflow: hidden;
+	float: left;
+}	
+
+#issues li {
+	max-width: 300px; 
+	height: 600px;
+	list-style: none;
+    text-align: center; 
+}
+
+#issues li h1 {
+	color: #FFD369;
+	font-size: 2rem;
+	text-align: center;
+}
+
+#issues h2{
+	text-align: center;
+	color: #EEEEEE;
+	margin-bottom: 5px;
+    font-family: "Heebo", sans-serif;
+    font-size: 1rem;
+}
+
+#issues h3 {
+    font-size: 1rem;
+}
+
+#issues li p {
+	font-size: 1rem;
+}
+
+.textdiv-timeline p a, .textdiv-timeline p a:visited  {
+    text-decoration: none;
+    color: #FFD369;
+}
+
+.textdiv-timeline p a:hover {
+    color: #EEEEEE;
+    font-weight: bold;
+}
+
+.haagahelia h1 {
+    padding-top: 2rem;
+}
+
+.ipaq h1 {
+    padding-top: 2.5rem;
+}
+
+.hbc h1 {
+    padding-top: 1rem;
+}
+
+.hylli h1 {
+    padding-top: 2.5rem;
+}
+
+/*Projects:*/
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects p {
+    text-align:center; 
+}
+
+.projects p a, .projects p a:visited {
+    text-decoration: none; 
+    color: #FFD369;
+    font-weight: bold;
+}
+
+.projects p a:hover {
+    color: white;
+}
+
+.container {
+    position: relative;
+    width: 250px;
+    margin: 5px;
+  }
+  
+.projectimage {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(32, 31, 31);
+}
+  
+.overlay {
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    right: 0;
+    background-color:#212121;
+    opacity: 0.9;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 10px;
+}
+  
+.container:hover .overlay {
+    height: 100%;
+    border-radius: 10px;
+}
+  
+.text {
+    white-space: nowrap; 
+    color: #EEEEEE;
+    font-size: 1rem;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.text h1 {
+    color: #FFD369;
+}
+
+/*Contact:*/
+
+.contact {
+    text-align: center;
+}
+
+.contactinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.contactinfo i {
+    color: #EEEEEE;
+    text-shadow: 5px 5px 10px black;
+    padding: 1rem;
+}
+
+.contactinfo a, .contactinfo a:link, .contactinfo a:visited{
+    text-decoration: none;
+    color: #EEEEEE;
+}
+  
+.contactinfo a i:hover {
+    color: #FFD369;
+}
+  
+#contact p {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 580px) {
+    #timeline {
+      display: flex;
+      flex-direction: column;
+        width: auto;
+        height: auto;
+        background: none;
+    }
+
+    #dates {
+        width: auto;
+        height: auto;
+        text-align: center;
+        list-style: none;
+        padding-bottom: 1rem;
+    }
+
+    #dates li {
+        list-style: none;
+        width: auto;
+        padding: none;
+        background: none;
+    }
+
+    #issues {
+        width: auto;
+        height: 380px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .timelineheader {
+        padding-bottom: 1rem;
+    }
+
+    
+  }
+
